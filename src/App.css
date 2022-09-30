@@ -1,3 +1,9 @@
+body{
+  background-color: black;
+  color: rgb(35, 223, 223);
+}
+
+
 h1 {
   text-align: center;
 }
@@ -5,22 +11,26 @@ h1 {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 610px;
+  width: 33.7rem;
   margin: 0 auto;
+  box-shadow:0.1rem 0.1rem 3rem rgb(87, 2, 2);
 }
 
 .grid-cell {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-  font-size: 10rem;
-  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+  width: 11rem;
+  border: 0.1rem solid rgb(99, 25, 25);
+  font-size: 8rem;
 }
 
 .game-winner {
   padding: 2rem;
   text-align: center;
   align-self: center;
+  font-size: 2rem;
 }
 
 .reset-game {
@@ -28,4 +38,14 @@ h1 {
   margin: 1rem auto;
   justify-content: center;
   align-items: center;
+}
+
+button{
+  color: brown;
+  background-color: rgb(43, 32, 32);
+  border-radius:0.5rem;
+  height: 4vh;
+  width: 8vw;
+  cursor: pointer;
+  border: .1rem solid rgb(72, 0, 0);
 }

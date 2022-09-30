@@ -15,7 +15,7 @@ const App = () => {
     ["2", "4", "6"],
   ];
 
-  const [playGrid, setPlayGrid] = useState(Array(9).fill(false));
+  const [playGrid, setPlayGrid] = useState(Array(9).fill(null));
   const [xNumbers, setXNumbers] = useState([]);
   const [oNumbers, setONumbers] = useState([]);
   const [gameOutcome, setGameOutcome] = useState("");
@@ -46,13 +46,14 @@ const App = () => {
       let result = combination.every((element) => {
         return arr.includes(element);
       });
-      return result
-        ? [setGameOutcome(`${symbol} is the Winner`), setGameOver("none")]
-        : null;
+      return (
+        result && [
+          setGameOutcome(`${symbol} is the Winner`),
+          setGameOver("none"),
+        ]
+      );
     });
-    return arr.length === 5 && symbol === "X"
-      ? setGameOutcome("Tie Game")
-      : null;
+    return arr.length === 5 && symbol === "X" && setGameOutcome("Tie Game");
   };
 
   const resetGame = () => {
@@ -65,7 +66,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <h1>Tic Tac Toe</h1>
       <div className="reset-game">
         <button onClick={resetGame}>Reset Game</button>
@@ -77,10 +78,8 @@ const App = () => {
           );
         })}
       </div>
-      {gameOutcome !== "" ? (
-        <div className="game-winner">{gameOutcome}</div>
-      ) : null}
-    </>
+      {gameOutcome && <div className="game-winner">{gameOutcome}</div>}
+    </div>
   );
 };
 export default App;
