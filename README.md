@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-Tic-Tac-Toe is a web application built with a React and Javascript. The game itself needs no explanation. The app is easy to use and pretty strign forward with very basic functions. 
+Tic-Tac-Toe is a web application built in Javascript language and React framework. The game itself needs no explanation. The app is easy to use and pretty strign forward with very basic functions. 
 
 # Summary
 This was a very interesting and challenging little application where I was able to be try out new approch to best cooding practices. It was fun trying to figure out the best way to compare winning arras to figure out the winner. Javascript portion of the appa is very clean and concise.
