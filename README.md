@@ -4,7 +4,7 @@ Tic-Tac-Toe is a web application built in Javascript language and React framewor
 # Summary
 This was a very interesting and challenging little application where I was able to be try out new approch to best cooding practices. It was fun trying to figure out the best way to compare winning arras to figure out the winner. Javascript portion of the appa is very clean and concise.
 
-Try out the live version here: [Tic-Tac-Toe]()
+Try out the live version here: [Tic-Tac-Toe](https://jumba23.github.io/tic-tac-toe/)
 
 ![TIC-TAC-TOE game](https://user-images.githubusercontent.com/80366503/193487819-eb454a47-1dca-4e16-b88b-5980c5c54f03.gif)
 
